@@ -5,11 +5,11 @@ class Solution {
         do{
             slow=findSquare(slow);
             fast=findSquare(findSquare(fast));
-            if(slow==1){
+            
+        }while(slow!=fast);
+        if(slow==1){
                 return true;
             }
-        }while(slow!=fast);
-
         return false;
     }
     private int findSquare(int n){
