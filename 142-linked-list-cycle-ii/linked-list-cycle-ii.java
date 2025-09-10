@@ -21,10 +21,10 @@ public class Solution {
                 break;
             }
         }
-        ListNode f=head;
+        slow=head;
         if(fast==null ||fast.next==null)return null;
-        while(f!=slow){
-            f=f.next;
+        while(fast!=slow){
+            fast=fast.next;
             slow=slow.next;
 
         }
